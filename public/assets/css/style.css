@@ -1,0 +1,40 @@
+body, html {
+    background: url("../img/burger.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: whitesmoke
+}
+
+.eat-left {
+    display: inline-block;
+    width: 49%;
+    border-right: 1px solid white;
+}
+
+.eaten-right{
+    display: inline-block;
+    width: 49%;
+}
+
+.center {
+    position: relative;
+    left: 40%;
+
+}
+
+
+h2 {
+    display: inline-block;
+    width: 49%;
+}
+
+.wrap {
+        padding:20px;
+        width:97%;
+        background: rgb(204, 204, 204); 
+        background: rgba(37, 35, 35, 0.5);
+        border: 1px solid white;
+}
+
