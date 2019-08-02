@@ -9,14 +9,14 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
-      cats: data
+      burgers: data
     };
-    console.log(hbsObject);
+    console.log(data);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/api/cats", function(req, res) {
+router.post("/api/burgers", function(req, res) {
   burger.create([
     "burger_name", "devoured"
   ], [
