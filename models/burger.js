@@ -8,9 +8,9 @@ var burgers = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
+  // if I remove vals from orm.insertOne I can get the post to run without an error but nothing is added to the dB an no info is displayed.
   create: function(cols, vals, cb) {
-    orm.insertOne("burgers", cols, vals, function(res) {
+    orm.insertOne("burgers", cols, vals , function(res) {
       cb(res);
     });
   },
